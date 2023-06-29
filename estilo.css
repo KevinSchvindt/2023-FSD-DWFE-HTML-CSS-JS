@@ -1,0 +1,38 @@
+head + body {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+/* establece los margenes de la pagina */
+
+#Fotocv:empty {
+        float:right;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+h1 {
+    color: white;
+    border: solid 3px red;
+    width: 100%;
+    margin: 0%;
+    padding: 5px;
+    background-color: rgb(255, 133, 102);
+}
+/* Da bordes y Color al Titulo principal */
+#Correo{
+    color: blue;
+}
+/* Da color al E-mail */
+h2{
+    color: blue;
+    border: solid 1px blue;
+    width: 100%;
+    margin: 0%;
+    padding: 5px;
+    background-color: aqua;
+}
+/* Da bordes y color a c/u de las secciones del CV */
