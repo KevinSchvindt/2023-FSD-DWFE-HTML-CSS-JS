@@ -2,15 +2,15 @@
     <html lang="es">
         <head>
             <meta charset="utf-8">
-            <meta name="apllication-name" content="Curriculum Vitae">
+            <meta name="application-name" content="Curriculum Vitae">
             <meta name="description" content="CV de Schvindt Kevin">
             <meta name="author" content="Schvindt Kevin">
-            <meta name="viewpoint" content="width=device-width, initial scale=1">
+            <meta name="viewport" content="width=device-width, initial scale=1">
             <link rel="stylesheet" href="estilo.css">
             <script src="programacion.js"></script>
-            <title>"CV"</title>
+            <title>CV</title>
         </head>
-        <body>
+        <body onload="dinamico()">
             <header>
                 <h1>Curriculum Vitae</h1>
             </header>
@@ -37,69 +37,82 @@
                         </p>
                         <p>
                             <b>Correo Electronico:</b>
-                           <p id= "Correo"> Kevinschvindt@gmail.com</p>
+                           <a href="mailto:Kevinschvindt@gmail.com"> Kevinschvindt@gmail.com</a>
+                        </p>
+                        <p>
+                            <b>Telefono:</b>
+                            <a id="Telefono" onmouseover="aumentarTelefono('Telefono')" onmouseout="contraerTelefono('Telefono')">03435-15492214</a>
                         </p>
                     </article>
                 </div>
                  <section>
-                    <h2 onclick="expandirContraer()">Educacion</h2>
-                    <div id="educacion">
+                    <h2 onclick="expandirContraer()">Formacion Académica</h2>
+                    <ul id="educacion">
                         <h3>Universidad Autonoma de Entre Ríos</h3>
                         <p>
-                            <b>Titulo Obtenido:</b>
-                            Tecnico En Administracion
-                            Año: 2019
+                        Titulo Obtenido:
                         </p>
+                        <p><b>Tecnico En Administracion</b></p>
+                            <p>Año: 2019</p>
                         <div>
                             <div>
-                                <b>Estudios en Curso:</b>
+                            Estudios en Curso:
                             </div>
                             <div>
-                                <p>Licenciatura en Administración De Empresas</p>
+                                <p><b>Licenciatura en Administración De Empresas</b></p>
                                 <p>Pendientes 3 materias y la tesis</p>
                             </div>
-                        </div>
                         <h3>Escuela Tecnica N°1 Nogoyá - Entre Ríos</h3>
                         <p>
-                            <b>Titulo Obtenido:</b>
-                            Tecnico en Organización y Procesamiento de Productos Agropecuarios
+                            Titulo Obtenido:
                         </p>
+                            <p><b>Tecnico en Organización y Procesamiento de Productos Agropecuarios</b>
+                        </p>
+                    </ul>
+                </section>
+                <p></p>
+                <section id="trabajos">
+                    <div>
+                    <h2>Experiencia Laboral</h2>
+                    <p></p>
                     </div>
                 </section>
                 <section>
-                    <h2 onclick="expandirContraer()">Experiencia Laboral</h2>
-                    <p></p>
+                    <h2 >Habilidades</h2>
+                    <ul>
+                        <li>Puntualidad</li>
+                        <li>Adaptación</li>
+                        <li>Amabilidad</li>
+                        <li>Responsabilidad</li>
+                        <li>Buena Presencia</li>
+                        <li>Carisma</li>
+                        <li>Compañerismo</li>
+                        <li>Negociación</li>
+                        <li>Liderazgo</li>
+                        <li>Proactividad</li>
+                    </ul>
                 </section>
                 <section>
-                    <h2>Habilidades</h2>
-                    <ol><p><b>Puntualidad</b></p>
-                    <p><b>Adaptación</b></p>
-                    <p><b>Amabilidad</b></p>
-                    <p><b>Responsabilidad</b></p>
-                    <p><b>Buena Presencia</b></p>
-                    <p><b>Carisma</b></p>
-                    <p><b>Compañerismo</b></p>
-                    <p><b>Negociación</b></p>
-                    <p><b>Liderazgo</b></p>
-                    <p><b>Proactividad</b></p></ol>
-                </section>
-                <section>
-                    <h2 onclick="expandirContraer()">Otros Datos:</h2>
-                    <p>
-                        <div>Cursos Realizados</div>
-                        <ol><p>Mediacion Y Conflicto</p>
-                        <p>Jornada de RCP</p>
-                        <p>Mantenimiento de Pc: Instalacion de S.O. y creacion de Redes Informaticas</p></ol>
-                    </p>
-                    <p>
-                        <div>Idiomas</div>
-                        <ol><p>Inglés (intermedio)</p>
-                        <p>Portugués (intermedio)</p></ol>
-                    </p>
-                    <p>
-                        <div>Licencia de Conducir</div>
-                        <ol><p>tipo A3 - B2 - G1 - G2</p></ol>
-                    </p>
+                    <h2>Otros Datos:</h2>
+                    
+                    <div>Cursos Realizados
+                        <ul>
+                            <li>Mediacion Y Conflicto</li>
+                            <li>Jornada de RCP</li>
+                            <li>Mantenimiento de Pc: Instalacion de S.O. y creacion de Redes Informaticas</li>
+                        </ul>
+                    </div>
+                    <div>Idiomas
+                        <ul>
+                            <li>Inglés (intermedio)</li>
+                            <li>Portugués (intermedio)</li>
+                        </ul>
+                    </div>
+                    <div>Licencia de Conducir
+                        <ul>
+                            <li>tipo A3 - B2 - G1 - G2</li>
+                        </ul>
+                    </div>
                 </section>
             </main>
         </body>
